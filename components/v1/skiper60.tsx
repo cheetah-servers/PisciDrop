@@ -133,74 +133,11 @@ const defaultTerms: TermItem[] = [
     )
   },
   {
-    id: "services",
-    title: "3. Services Offered",
-    content: (
-      <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">3.1 Delivery service types</h4>
-        <p>
-          PicsiDrop offers three delivery service types. The applicable price for each is calculated based on distance and vehicle type as per the published rate card.
-        </p>
-        <div className="overflow-x-auto border border-zinc-200 rounded-xl my-4">
-          <table className="min-w-full divide-y divide-zinc-200 text-xs text-zinc-600">
-            <thead className="bg-zinc-50 font-bold text-zinc-800 text-left">
-              <tr>
-                <th className="px-4 py-3 border-b border-zinc-200">Service type</th>
-                <th className="px-4 py-3 border-b border-zinc-200">Description</th>
-                <th className="px-4 py-3 border-b border-zinc-200">Price multiplier</th>
-                <th className="px-4 py-3 border-b border-zinc-200">Delivery time</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-zinc-200 bg-white">
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">Standard</td>
-                <td className="px-4 py-3">Regular delivery matched with an available Traveler on the route.</td>
-                <td className="px-4 py-3">1.0x base price</td>
-                <td className="px-4 py-3">2 to 4 hours</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">Express</td>
-                <td className="px-4 py-3">Urgent delivery. Traveler prioritises the parcel immediately. Only available when a Traveler is currently active on the route.</td>
-                <td className="px-4 py-3">1.5x base price</td>
-                <td className="px-4 py-3">Under 90 minutes</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">Scheduled</td>
-                <td className="px-4 py-3">Advance booking for a specific time slot: Morning (7AM-11AM), Afternoon (11AM-4PM), or Evening (4PM-9PM).</td>
-                <td className="px-4 py-3">0.85x base price</td>
-                <td className="px-4 py-3">Within chosen slot</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">3.2 Distance-based base pricing formula</h4>
-        <ul className="list-disc pl-5 space-y-1.5">
-          <li><strong>Private vehicle (bike or car):</strong> Base price = Rs. 50 + (distance in km x Rs. 8)</li>
-          <li><strong>Public transport (bus, metro, MMTS):</strong> Base price = Rs. 50 + (distance in km x Rs. 5)</li>
-          <li><strong>Minimum price for any delivery:</strong> Rs. 80 regardless of distance or service type.</li>
-          <li><strong>Maximum surge pricing:</strong> 1.5x of standard price during peak hours (8AM-10AM and 5PM-8PM weekdays).</li>
-          <li><strong>Night delivery surcharge (9PM to 6AM):</strong> Rs. 50 flat added to any delivery type.</li>
-        </ul>
-
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">3.3 What PicsiDrop does not guarantee</h4>
-        <p>
-          PicsiDrop is a marketplace platform that connects Senders with Travelers. We are NOT a courier company and do not own, operate, or control the vehicles used for delivery.
-        </p>
-        <ul className="list-disc pl-5 space-y-1.5">
-          <li>PicsiDrop does not guarantee delivery times for Standard deliveries (target 2-4 hours, not a contractual commitment).</li>
-          <li>PicsiDrop does not guarantee availability of Travelers on every route at all times.</li>
-          <li>PicsiDrop is not responsible for delays caused by traffic, weather, road closures, or traveler emergencies.</li>
-        </ul>
-      </div>
-    )
-  },
-  {
     id: "sender-obligations",
-    title: "4. Sender Obligations & Prohibited Items",
+    title: "3. Sender Obligations & Prohibited Items",
     content: (
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">4.1 What Senders must do</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">3.1 What Senders must do</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Provide accurate pickup and delivery addresses before booking.</li>
           <li>Ensure the parcel is properly packed, sealed, and labelled before handover to the Traveler.</li>
@@ -209,7 +146,7 @@ const defaultTerms: TermItem[] = [
           <li>Declare the correct parcel size and weight when booking. Misrepresentation may result in cancellation without refund.</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">4.2 Prohibited items — Senders must NOT send</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">3.2 Prohibited items — Senders must NOT send</h4>
         <p className="text-red-600 font-semibold">
           Sending prohibited items is a serious violation. PicsiDrop will immediately terminate accounts found sending prohibited items and will cooperate with law enforcement authorities.
         </p>
@@ -226,7 +163,7 @@ const defaultTerms: TermItem[] = [
           <li>Any item whose possession, transport, or delivery is prohibited by Indian law</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">4.3 High-value items</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">3.3 High-value items</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Items with a declared value above Rs. 5,000 must be selected as "Fragile / High Value" during booking.</li>
           <li>PicsiDrop is not responsible for loss or damage to items valued above Rs. 5,000 that were not declared at the time of booking.</li>
@@ -234,7 +171,7 @@ const defaultTerms: TermItem[] = [
         </ul>
 
         <div className="bg-red-50 border border-red-200/60 rounded-xl p-4 my-4 space-y-2">
-          <h4 className="font-bold text-red-800 text-xs uppercase tracking-wide">4.4 Sender Liability for Illegal or Prohibited Items — Full Indemnity Clause</h4>
+          <h4 className="font-bold text-red-800 text-xs uppercase tracking-wide">3.4 Sender Liability for Illegal or Prohibited Items — Full Indemnity Clause</h4>
           <p className="text-red-950 font-semibold text-xs">
             IMPORTANT: If a Sender sends illegal, prohibited, or undeclared items through PicsiDrop, the Sender alone bears full legal, financial, and criminal responsibility. PicsiDrop and the Traveler are completely absolved of all liability. This clause is binding and non-negotiable.
           </p>
@@ -262,10 +199,10 @@ const defaultTerms: TermItem[] = [
   },
   {
     id: "traveler-obligations",
-    title: "5. Traveler Obligations",
+    title: "4. Traveler Obligations",
     content: (
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">5.1 What Travelers must do</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">4.1 What Travelers must do</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Complete full KYC verification before accepting any delivery.</li>
           <li>Hold and carry a valid, non-expired Indian Driving License (DL) at all times when making deliveries using a private bike, car, or auto-rickshaw. Travelers using public transport (bus, metro, MMTS) are exempt from this requirement.</li>
@@ -277,7 +214,7 @@ const defaultTerms: TermItem[] = [
           <li>Not open, inspect, tamper with, photograph, or interfere with the contents of any parcel.</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">5.2 What Travelers must NOT do</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">4.2 What Travelers must NOT do</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Accept a delivery and then fail to deliver without informing PicsiDrop support.</li>
           <li>Hand the parcel to any other person without written approval from PicsiDrop.</li>
@@ -286,7 +223,7 @@ const defaultTerms: TermItem[] = [
           <li>Create fake OTP confirmations or falsely claim delivery has been completed.</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">5.3 Traveler liability</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">4.3 Traveler liability</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Travelers are responsible for any damage to parcels caused by their negligence or deliberate action.</li>
           <li>If a parcel is lost or stolen while in the Traveler's possession and the Traveler is found responsible, PicsiDrop may withhold all pending payouts and seek compensation.</li>
@@ -297,17 +234,17 @@ const defaultTerms: TermItem[] = [
   },
   {
     id: "payments-escrow-refunds",
-    title: "6. Payments, Escrow & Refunds",
+    title: "5. Payments, Escrow & Refunds",
     content: (
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">6.1 Payment collection</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">5.1 Payment collection</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>All Delivery Fees are collected from the Sender at the time of booking via UPI, cards, or net banking through our payment gateway partner (Cashfree Payments).</li>
           <li>No cash payments are accepted by Travelers. All payments must go through the PicsiDrop platform.</li>
           <li>The Delivery Fee is held in escrow by PicsiDrop until delivery is confirmed by dual OTP.</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">6.2 Traveler payout</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">5.2 Traveler payout</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Travelers receive 75% of the Delivery Fee (the Traveler Payout) within 15 minutes of delivery OTP confirmation.</li>
           <li>Payment is sent directly to the Traveler's verified UPI ID or bank account.</li>
@@ -315,7 +252,7 @@ const defaultTerms: TermItem[] = [
           <li>If a delivery fails through no fault of the Traveler, the Traveler receives 25% of the agreed fee as a partial compensation payment.</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">6.3 Refund policy for Senders</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">5.3 Refund policy for Senders</h4>
         <div className="overflow-x-auto border border-zinc-200 rounded-xl my-4">
           <table className="min-w-full divide-y divide-zinc-200 text-xs text-zinc-600">
             <thead className="bg-zinc-50 font-bold text-zinc-800 text-left">
@@ -370,7 +307,7 @@ const defaultTerms: TermItem[] = [
           </table>
         </div>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">6.4 Disputes</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">5.4 Disputes</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>All payment disputes must be raised within 48 hours of the delivery date via WhatsApp to PicsiDrop support.</li>
           <li>PicsiDrop will investigate disputes within 5 business days and communicate the outcome to both parties.</li>
@@ -381,10 +318,10 @@ const defaultTerms: TermItem[] = [
   },
   {
     id: "cancellation-policy",
-    title: "7. Cancellation Policy",
+    title: "6. Cancellation Policy",
     content: (
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">7.1 Cancellation by Sender</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">6.1 Cancellation by Sender</h4>
         <div className="overflow-x-auto border border-zinc-200 rounded-xl my-4">
           <table className="min-w-full divide-y divide-zinc-200 text-xs text-zinc-600">
             <thead className="bg-zinc-50 font-bold text-zinc-800 text-left">
@@ -419,7 +356,7 @@ const defaultTerms: TermItem[] = [
           </table>
         </div>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">7.2 Cancellation by Traveler</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">6.2 Cancellation by Traveler</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Travelers may cancel a booking before physically picking up the parcel.</li>
           <li>Travelers who cancel more than 3 bookings in a calendar month will receive a warning.</li>
@@ -427,7 +364,7 @@ const defaultTerms: TermItem[] = [
           <li>Repeated pattern cancellation (accepting and cancelling without valid reason) will result in permanent account termination.</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">7.3 Cancellation by PicsiDrop</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">6.3 Cancellation by PicsiDrop</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>PicsiDrop reserves the right to cancel any booking at any time if prohibited items are discovered or suspected.</li>
           <li>PicsiDrop may cancel bookings in cases of safety concerns, natural disasters, or force majeure events.</li>
@@ -438,10 +375,10 @@ const defaultTerms: TermItem[] = [
   },
   {
     id: "liability-limitation",
-    title: "8. Liability & Limitation",
+    title: "7. Liability & Limitation",
     content: (
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">8.1 PicsiDrop's liability is limited</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">7.1 PicsiDrop's liability is limited</h4>
         <p>
           PicsiDrop is a technology platform that connects Senders with Travelers. We are not a courier company, logistics provider, or transport company under Indian law. Our liability is strictly limited as described in this section.
         </p>
@@ -453,7 +390,7 @@ const defaultTerms: TermItem[] = [
           <li>PicsiDrop is not liable for any losses arising from force majeure events including natural disasters, riots, strikes, or government orders.</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">8.2 Traveler liability to Sender</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">7.2 Traveler liability to Sender</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>A Traveler who loses, damages, or steals a parcel may be held liable directly by the Sender.</li>
           <li>PicsiDrop will provide Sender with Traveler contact details and KYC information in cases of verified negligence or theft to facilitate legal action.</li>
@@ -464,10 +401,10 @@ const defaultTerms: TermItem[] = [
   },
   {
     id: "safety-policy",
-    title: "9. Safety Policy",
+    title: "8. Safety Policy",
     content: (
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">9.1 Traveler safety</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">8.1 Traveler safety</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Travelers have the absolute right to refuse any delivery if they feel unsafe, uncomfortable, or if they suspect prohibited items.</li>
           <li>Travelers must never open parcels to inspect contents unless instructed to do so by law enforcement with a valid warrant.</li>
@@ -475,14 +412,14 @@ const defaultTerms: TermItem[] = [
           <li>PicsiDrop will cooperate fully with police investigations.</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">9.2 Sender safety</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">8.2 Sender safety</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>PicsiDrop strongly advises Senders not to share their home address with Travelers beyond what is necessary for pickup.</li>
           <li>Senders should use a common ground-floor location or a neighbour as the pickup point where possible.</li>
           <li>Never send irreplaceable items (original documents, heirlooms, family photographs) through PicsiDrop.</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">9.3 Reporting safety concerns</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">8.3 Reporting safety concerns</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Report any safety concern, suspicious activity, or misconduct to PicsiDrop support via WhatsApp immediately.</li>
           <li>PicsiDrop has a zero-tolerance policy for harassment, abuse, or threats between Senders and Travelers.</li>
@@ -493,10 +430,10 @@ const defaultTerms: TermItem[] = [
   },
   {
     id: "platform-rules",
-    title: "10. Platform Rules & Code of Conduct",
+    title: "9. Platform Rules & Code of Conduct",
     content: (
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">10.1 Rules for all Users</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider">9.1 Rules for all Users</h4>
         <ul className="list-disc pl-5 space-y-1.5">
           <li>Treat all other platform participants with respect and courtesy.</li>
           <li>Do not attempt to contact Travelers or Senders outside of PicsiDrop channels for the purpose of arranging off-platform deliveries.</li>
@@ -505,7 +442,7 @@ const defaultTerms: TermItem[] = [
           <li>Do not attempt to hack, scrape, or reverse-engineer the PicsiDrop platform.</li>
         </ul>
 
-        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">10.2 Account suspension and termination</h4>
+        <h4 className="font-bold text-zinc-950 text-xs uppercase tracking-wider mt-4">9.2 Account suspension and termination</h4>
         <div className="overflow-x-auto border border-zinc-200 rounded-xl my-4">
           <table className="min-w-full divide-y divide-zinc-200 text-xs text-zinc-600">
             <thead className="bg-zinc-50 font-bold text-zinc-800 text-left">
@@ -537,7 +474,7 @@ const defaultTerms: TermItem[] = [
               </tr>
               <tr>
                 <td className="px-4 py-3 font-semibold text-zinc-950">Falsifying KYC documents</td>
-                <td className="px-4 py-3">Immediate permanent termination + full report to police + Sender bears all legal liability under Section 4.4 indemnity clause</td>
+                <td className="px-4 py-3">Immediate permanent termination + full report to police + Sender bears all legal liability under Section 3.4 indemnity clause</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 font-semibold text-zinc-950">Failing to provide Driving License when using private vehicle</td>
@@ -559,7 +496,7 @@ const defaultTerms: TermItem[] = [
   },
   {
     id: "intellectual-property",
-    title: "11. Intellectual Property",
+    title: "10. Intellectual Property",
     content: (
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
         <ul className="list-disc pl-5 space-y-1.5">
@@ -572,7 +509,7 @@ const defaultTerms: TermItem[] = [
   },
   {
     id: "governing-law",
-    title: "12. Governing Law & Dispute Resolution",
+    title: "11. Governing Law & Dispute Resolution",
     content: (
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
         <ul className="list-disc pl-5 space-y-1.5">
@@ -586,7 +523,7 @@ const defaultTerms: TermItem[] = [
   },
   {
     id: "changes-to-terms",
-    title: "13. Changes to These Terms",
+    title: "12. Changes to These Terms",
     content: (
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
         <ul className="list-disc pl-5 space-y-1.5">
@@ -595,58 +532,6 @@ const defaultTerms: TermItem[] = [
           <li>Continued use of PicsiDrop after changes take effect constitutes acceptance of the updated Terms.</li>
           <li>The current version of these Terms is always available at picsidrop.web.app/terms</li>
         </ul>
-      </div>
-    )
-  },
-  {
-    id: "contact-information",
-    title: "14. Contact & Grievance Officer",
-    content: (
-      <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
-        <div className="overflow-x-auto border border-zinc-200 rounded-xl my-4">
-          <table className="min-w-full divide-y divide-zinc-200 text-xs text-zinc-600">
-            <thead className="bg-zinc-50 font-bold text-zinc-800 text-left">
-              <tr>
-                <th className="px-4 py-3 border-b border-zinc-200">Contact type</th>
-                <th className="px-4 py-3 border-b border-zinc-200">Details</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-zinc-200 bg-white">
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">General support</td>
-                <td className="px-4 py-3">WhatsApp: +91 99999 99999 (replace with real number)</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">Email support</td>
-                <td className="px-4 py-3"><a href="mailto:support@picsidrop.com" className="text-orange-600 hover:underline">support@picsidrop.com</a></td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">Legal / privacy concerns</td>
-                <td className="px-4 py-3"><a href="mailto:privacy@picsidrop.com" className="text-orange-600 hover:underline">privacy@picsidrop.com</a></td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">Data Protection Officer</td>
-                <td className="px-4 py-3"><a href="mailto:dpo@picsidrop.com" className="text-orange-600 hover:underline">dpo@picsidrop.com</a></td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">Grievance Officer (DPDPA)</td>
-                <td className="px-4 py-3"><a href="mailto:grievance@picsidrop.com" className="text-orange-600 hover:underline">grievance@picsidrop.com</a></td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">Response time — support</td>
-                <td className="px-4 py-3">Within 24 hours (WhatsApp) / 48 hours (email)</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">Response time — legal</td>
-                <td className="px-4 py-3">Within 30 days as required by DPDPA 2023</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3 font-semibold text-zinc-950">Office address</td>
-                <td className="px-4 py-3">Hyderabad, Telangana, India (full address to be updated)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
     )
   }
