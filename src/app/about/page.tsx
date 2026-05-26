@@ -1,7 +1,11 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
 import { Footer } from "../../../components/footer";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description: "Learn about PicsiDrop's mission to build Hyderabad's largest peer-to-peer delivery network, connecting senders with travelers for greener, faster commutes.",
+};
 
 export default function AboutPage() {
   return (

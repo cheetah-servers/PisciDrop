@@ -1,8 +1,12 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
 import { Footer } from "../../../components/footer";
 import { Skiper60, TermItem } from "@/components/v1/skiper60";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Read the PicsiDrop Privacy Policy. Learn how we handle personal data, location tracking, Aadhaar KYC verification, and comply with India's DPDPA 2023.",
+};
 
 export default function PrivacyPage() {
   const privacySections: TermItem[] = [

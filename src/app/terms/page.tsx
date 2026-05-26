@@ -1,8 +1,12 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
 import { Footer } from "../../../components/footer";
 import { Skiper60 } from "@/components/v1/skiper60";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description: "Read the PicsiDrop Terms & Conditions carefully. Learn about eligibility, service types, base pricing formula, prohibited items, and full indemnity guidelines.",
+};
 
 export default function TermsPage() {
   return (
