@@ -20,7 +20,7 @@ export function CtaCards() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           
           {/* Left Card: Senders (Solid Orange with Illustration) */}
-          <div className="bg-orange-500 text-white rounded-3xl p-8 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 shadow-lg border border-orange-600/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <div id="book" className="bg-orange-500 text-white rounded-3xl p-8 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 shadow-lg border border-orange-600/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl scroll-mt-24">
             
             {/* Left Column: Text and Button */}
             <div className="flex flex-col items-start space-y-6 flex-1">
@@ -54,7 +54,7 @@ export function CtaCards() {
           </div>
 
           {/* Right Card: Travelers (White with Orange Border with Illustration) */}
-          <div className="bg-white text-zinc-900 rounded-3xl p-8 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 shadow-md border-2 border-orange-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+          <div id="become-traveler" className="bg-white text-zinc-900 rounded-3xl p-8 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 shadow-md border-2 border-orange-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg scroll-mt-24">
             
             {/* Left Column: Text and Button */}
             <div className="flex flex-col items-start space-y-6 flex-1">

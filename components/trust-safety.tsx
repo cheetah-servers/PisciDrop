@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { LottiePlayer } from "./lottie-player";
 
 export function TrustSafety() {
   return (
@@ -56,11 +57,10 @@ export function TrustSafety() {
             {/* Bottom: Lottie Animation */}
             <div className="mt-auto pt-6 flex items-end justify-center">
               <div className="w-[180px] h-[180px] rounded-2xl overflow-hidden">
-                <iframe
-                  src="https://lottie.host/embed/d2431bbf-97d5-4c8c-9702-5173c99be56d/tlBV0JYCDG.lottie"
-                  className="w-full h-full border-0"
-                  title="Escrow Payment Animation"
-                ></iframe>
+                <LottiePlayer
+                  src="https://lottie.host/d2431bbf-97d5-4c8c-9702-5173c99be56d/tlBV0JYCDG.lottie"
+                  className="w-full h-full"
+                />
               </div>
             </div>
           </div>
@@ -96,11 +96,10 @@ export function TrustSafety() {
             {/* Bottom: Lottie Animation */}
             <div className="mt-auto pt-6 flex items-end justify-center">
               <div className="w-[180px] h-[180px] rounded-2xl overflow-hidden bg-white">
-                <iframe
-                  src="https://lottie.host/embed/ad7a4d9c-4284-43ce-926e-7f3fd084e142/OVQTVkr8Bb.lottie"
-                  className="w-full h-full border-0"
-                  title="KYC Verification Animation"
-                ></iframe>
+                <LottiePlayer
+                  src="https://lottie.host/ad7a4d9c-4284-43ce-926e-7f3fd084e142/OVQTVkr8Bb.lottie"
+                  className="w-full h-full"
+                />
               </div>
             </div>
           </div>
@@ -139,11 +138,10 @@ export function TrustSafety() {
             {/* Bottom: Lottie Animation */}
             <div className="mt-auto pt-6 flex items-end justify-center">
               <div className="w-[180px] h-[180px] rounded-2xl overflow-hidden">
-                <iframe
-                  src="https://lottie.host/embed/2894b224-a896-466c-952e-115627577f05/Vnhryr3cVT.lottie"
-                  className="w-full h-full border-0"
-                  title="OTP Verification Animation"
-                ></iframe>
+                <LottiePlayer
+                  src="https://lottie.host/2894b224-a896-466c-952e-115627577f05/Vnhryr3cVT.lottie"
+                  className="w-full h-full"
+                />
               </div>
             </div>
           </div>

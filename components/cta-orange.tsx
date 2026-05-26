@@ -5,7 +5,14 @@ import Link from "next/link";
 
 export function CtaOrange() {
   return (
-    <section className="relative py-20 bg-orange-500 text-white overflow-hidden">
+    <section id="download" className="relative bg-orange-500 text-white overflow-hidden scroll-mt-24">
+      {/* Wave Divider at the top */}
+      <div className="w-full overflow-hidden leading-[0] bg-white pointer-events-none">
+        <svg className="relative block w-full h-[100px] text-orange-500 fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C300,120 900,120 1200,0 L1200,120 L0,120 Z"></path>
+        </svg>
+      </div>
+
       {/* Decorative Background Elements */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white/10 rounded-full blur-3xl -z-10 pointer-events-none translate-x-1/3 -translate-y-1/3"></div>
       <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-white/10 rounded-full blur-3xl -z-10 pointer-events-none -translate-x-1/3 translate-y-1/3"></div>
@@ -39,7 +46,7 @@ export function CtaOrange() {
         <circle cx="90" cy="90" r="2" fill="currentColor" />
       </svg>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 relative z-10 text-center">
         
         {/* Badge */}
         <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold text-white bg-white/20 border border-white/10 shadow-xs mb-6 uppercase tracking-widest">

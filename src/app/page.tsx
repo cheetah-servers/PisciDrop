@@ -5,6 +5,7 @@ import { PricingComparison } from "../../components/pricing-comparison";
 import { FAQ } from "../../components/faq";
 import { Footer } from "../../components/footer";
 import { CtaOrange } from "../../components/cta-orange";
+import { LottiePlayer } from "../../components/lottie-player";
 
 export default function Home() {
   return (
@@ -86,11 +87,10 @@ export default function Home() {
                 <div className="absolute inset-6 bg-zinc-50 rounded-[40px] -rotate-3 -z-20 border border-zinc-150 shadow-xs pointer-events-none"></div>
                 
                 {/* Animation Player */}
-                <iframe
-                  src="https://lottie.host/embed/b9888d10-1ea2-4fb2-b295-c4ad2fcb230e/EP2EBKihce.lottie"
-                  className="w-full h-full border-0 relative z-10"
-                  title="PicsiDrop Delivery Animation"
-                ></iframe>
+                <LottiePlayer
+                  src="https://lottie.host/b9888d10-1ea2-4fb2-b295-c4ad2fcb230e/EP2EBKihce.lottie"
+                  className="w-full h-full relative z-10"
+                />
               </div>
             </div>
 

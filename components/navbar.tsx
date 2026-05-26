@@ -42,35 +42,42 @@ export function Navbar() {
             {/* Desktop Nav Links */}
             <nav className="flex items-center space-x-8">
               <Link
-                href="#"
+                href="/"
                 className="text-sm font-semibold text-zinc-700 hover:text-orange-500 transition-colors relative py-1 group"
               >
                 Home
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
-                href="#how-it-works"
+                href="/about"
+                className="text-sm font-semibold text-zinc-700 hover:text-orange-500 transition-colors relative py-1 group"
+              >
+                About
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+              <Link
+                href="/#how-it-works"
                 className="text-sm font-semibold text-zinc-700 hover:text-orange-500 transition-colors relative py-1 group"
               >
                 How it Works
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
-                href="#for-travelers"
+                href="/#become-traveler"
                 className="text-sm font-semibold text-zinc-700 hover:text-orange-500 transition-colors relative py-1 group"
               >
                 For Travelers
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
-                href="#pricing"
+                href="/#pricing"
                 className="text-sm font-semibold text-zinc-700 hover:text-orange-500 transition-colors relative py-1 group"
               >
                 Pricing
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link
-                href="#contact"
+                href="/contact"
                 className="text-sm font-semibold text-zinc-700 hover:text-orange-500 transition-colors relative py-1 group"
               >
                 Contact
@@ -80,7 +87,7 @@ export function Navbar() {
 
             {/* Desktop CTA Button */}
             <Link
-              href="#download"
+              href="/#download"
               className="inline-flex items-center justify-center px-4.5 py-2.5 rounded-xl text-sm font-medium text-zinc-700 bg-transparent border border-zinc-300/80 hover:bg-zinc-100 hover:border-zinc-400 hover:text-zinc-900 transition-all duration-200"
             >
               {/* Real Google Play Store 4-Color SVG Icon */}
@@ -160,35 +167,42 @@ export function Navbar() {
         <div className="md:hidden animate-in fade-in slide-in-from-top-4 duration-200">
           <div className="px-4 pt-2 pb-6 space-y-3 bg-white border-b border-zinc-200/50 shadow-lg">
             <Link
-              href="#"
+              href="/"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-2.5 rounded-xl text-base font-semibold text-zinc-700 hover:bg-zinc-200/30 hover:text-orange-500 transition-all"
             >
               Home
             </Link>
             <Link
-              href="#how-it-works"
+              href="/about"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2.5 rounded-xl text-base font-semibold text-zinc-700 hover:bg-zinc-200/30 hover:text-orange-500 transition-all"
+            >
+              About
+            </Link>
+            <Link
+              href="/#how-it-works"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-2.5 rounded-xl text-base font-semibold text-zinc-700 hover:bg-zinc-200/30 hover:text-orange-500 transition-all"
             >
               How it Works
             </Link>
             <Link
-              href="#for-travelers"
+              href="/#become-traveler"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-2.5 rounded-xl text-base font-semibold text-zinc-700 hover:bg-zinc-200/30 hover:text-orange-500 transition-all"
             >
               For Travelers
             </Link>
             <Link
-              href="#pricing"
+              href="/#pricing"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-2.5 rounded-xl text-base font-semibold text-zinc-700 hover:bg-zinc-200/30 hover:text-orange-500 transition-all"
             >
               Pricing
             </Link>
             <Link
-              href="#contact"
+              href="/contact"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-2.5 rounded-xl text-base font-semibold text-zinc-700 hover:bg-zinc-200/30 hover:text-orange-500 transition-all"
             >
@@ -197,7 +211,7 @@ export function Navbar() {
             <hr className="border-zinc-200 my-2" />
             <div className="px-3">
               <Link
-                href="#download"
+                href="/#download"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="flex items-center justify-center py-2.5 rounded-xl text-sm font-medium text-zinc-700 bg-transparent border border-zinc-300/80 hover:bg-zinc-100 transition-colors w-full"
               >
