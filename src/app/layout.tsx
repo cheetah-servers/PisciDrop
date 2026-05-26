@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://picsidrop.com"),
+  icons: {
+    icon: "https://ik.imagekit.io/dypkhqxip/favicon",
+    shortcut: "https://ik.imagekit.io/dypkhqxip/favicon",
+    apple: "https://ik.imagekit.io/dypkhqxip/favicon",
+  },
   title: {
     default: "PicsiDrop | Peer-to-Peer Same-Day Delivery in Hyderabad",
     template: "%s | PicsiDrop"
