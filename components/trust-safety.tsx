@@ -54,12 +54,13 @@ export function TrustSafety() {
               </div>
             </div>
 
-            {/* Bottom: Lottie Animation */}
+            {/* Bottom: Illustration */}
             <div className="mt-auto pt-6 flex items-end justify-center">
-              <div className="w-[180px] h-[180px] rounded-2xl overflow-hidden">
-                <LottiePlayer
-                  src="https://lottie.host/d2431bbf-97d5-4c8c-9702-5173c99be56d/tlBV0JYCDG.lottie"
-                  className="w-full h-full"
+              <div className="w-[180px] h-[180px] rounded-2xl overflow-hidden flex items-center justify-center">
+                <img
+                  src="https://ik.imagekit.io/dypkhqxip/E-Wallet-bro.svg"
+                  alt="Escrow Payments"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
@@ -135,12 +136,13 @@ export function TrustSafety() {
               </div>
             </div>
 
-            {/* Bottom: Lottie Animation */}
+            {/* Bottom: Illustration */}
             <div className="mt-auto pt-6 flex items-end justify-center">
-              <div className="w-[180px] h-[180px] rounded-2xl overflow-hidden">
-                <LottiePlayer
-                  src="https://lottie.host/2894b224-a896-466c-952e-115627577f05/Vnhryr3cVT.lottie"
-                  className="w-full h-full"
+              <div className="w-[220px] h-[220px] rounded-2xl overflow-hidden flex items-center justify-center">
+                <img
+                  src="https://ik.imagekit.io/dypkhqxip/Enter%20OTP-rafiki.svg"
+                  alt="Dual OTP System"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
