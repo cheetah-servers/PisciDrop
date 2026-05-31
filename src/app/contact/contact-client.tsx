@@ -15,7 +15,6 @@ export default function ContactPageClient() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate API request
     setIsSubmitted(true);
   };
 
@@ -23,7 +22,6 @@ export default function ContactPageClient() {
     <div className="min-h-screen bg-zinc-50 pt-24 flex flex-col justify-between">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 w-full flex-grow">
 
-        {/* Page Header */}
         <div className="text-center max-w-2xl mx-auto mb-8">
           <span className="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold text-orange-600 bg-orange-50 border border-orange-200/40 shadow-xs mb-3 uppercase tracking-widest">
             Contact Us
@@ -36,12 +34,9 @@ export default function ContactPageClient() {
           </p>
         </div>
 
-        {/* Contact Layout Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
 
-          {/* Left Column: Contact Details (Span 5) */}
           <div className="lg:col-span-5 bg-orange-500 text-white rounded-3xl p-8 md:p-10 shadow-lg flex flex-col justify-between relative overflow-hidden">
-            {/* Background Glow */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none translate-x-1/4 -translate-y-1/4"></div>
 
             <div className="space-y-8 relative z-10">
@@ -50,10 +45,8 @@ export default function ContactPageClient() {
                 Feel free to reach out to us via email or WhatsApp. Our support team is active daily from 9:00 AM to 9:00 PM.
               </p>
 
-              {/* Detail Items */}
               <div className="space-y-6">
 
-                {/* WhatsApp / Phone */}
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -64,14 +57,10 @@ export default function ContactPageClient() {
                     <h3 className="text-xs font-bold text-orange-200 uppercase tracking-wider">WhatsApp / Support</h3>
                     <div className="space-y-1 mt-1 text-sm font-semibold">
                       <p>+91 81254 32177</p>
-                      <p>+91 97040 93430</p>
-                      <p>+91 90143 60584</p>
-                      <p>+91 99895 06990</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Email */}
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -79,12 +68,14 @@ export default function ContactPageClient() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xs font-bold text-orange-200 uppercase tracking-wider">Email Address</h3>
-                    <p className="text-sm font-semibold mt-0.5">support@piscidrop.in</p>
+                    <h3 className="text-xs font-bold text-orange-200 uppercase tracking-wider">Email Addresses</h3>
+                    <div className="space-y-1 mt-1 text-sm font-semibold">
+                      <p>paverasa4@gmail.com</p>
+                      <p>paverasapvtltd@gmail.com</p>
+                    </div>
                   </div>
                 </div>
 
-                {/* Office Location */}
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -95,8 +86,8 @@ export default function ContactPageClient() {
                   <div>
                     <h3 className="text-xs font-bold text-orange-200 uppercase tracking-wider">Headquarters</h3>
                     <p className="text-sm font-semibold mt-0.5 leading-relaxed">
-                      Maruthi enclave plot no 302 4th floor,<br />
-                      NCL Kompally, Hyderabad
+                      173, PLASSEY LANE, Bowenpally,<br />
+                      Tirumalagiri, Hyderabad - 500011, Telangana
                     </p>
                   </div>
                 </div>
@@ -104,13 +95,11 @@ export default function ContactPageClient() {
               </div>
             </div>
 
-            {/* Bottom tagline */}
             <div className="mt-12 text-xs text-orange-200 relative z-10">
               Paverasa Private Limited
             </div>
           </div>
 
-          {/* Right Column: Contact Form (Span 7) */}
           <div className="lg:col-span-7 bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-zinc-200/60 flex flex-col justify-center">
             {isSubmitted ? (
               <div className="text-center py-12 space-y-4">
@@ -133,7 +122,6 @@ export default function ContactPageClient() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {/* Full Name */}
                   <div className="space-y-1.5">
                     <label htmlFor="name" className="text-xs font-bold text-zinc-700 uppercase tracking-wider">
                       Full Name
@@ -149,7 +137,6 @@ export default function ContactPageClient() {
                     />
                   </div>
 
-                  {/* Email */}
                   <div className="space-y-1.5">
                     <label htmlFor="email" className="text-xs font-bold text-zinc-700 uppercase tracking-wider">
                       Email Address
@@ -167,7 +154,6 @@ export default function ContactPageClient() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {/* Phone */}
                   <div className="space-y-1.5">
                     <label htmlFor="phone" className="text-xs font-bold text-zinc-700 uppercase tracking-wider">
                       Phone Number
@@ -182,7 +168,6 @@ export default function ContactPageClient() {
                     />
                   </div>
 
-                  {/* Subject Selector */}
                   <div className="space-y-1.5">
                     <label htmlFor="subject" className="text-xs font-bold text-zinc-700 uppercase tracking-wider">
                       Subject
@@ -201,7 +186,6 @@ export default function ContactPageClient() {
                   </div>
                 </div>
 
-                {/* Message */}
                 <div className="space-y-1.5">
                   <label htmlFor="message" className="text-xs font-bold text-zinc-700 uppercase tracking-wider">
                     Message
@@ -217,7 +201,6 @@ export default function ContactPageClient() {
                   />
                 </div>
 
-                {/* Submit Button */}
                 <button
                   type="submit"
                   className="w-full py-4 rounded-xl text-sm font-bold text-white bg-orange-500 hover:bg-orange-600 transition-all shadow-md hover:shadow-lg active:scale-98"
@@ -232,7 +215,6 @@ export default function ContactPageClient() {
 
       </div>
 
-      {/* Global Footer */}
       <Footer />
     </div>
   );
