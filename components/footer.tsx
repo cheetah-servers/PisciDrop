@@ -8,17 +8,15 @@ import { Linkedin, Instagram, Youtube } from "lucide-react";
 export function Footer() {
   const containerRef = useRef<HTMLDivElement>(null);
   
-  // Set up useScroll target on this container.
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"],
   });
 
-  // Map scroll progress from [0, 1] to [-50, 150]
   const truckY = useTransform(scrollYProgress, [0, 1], [-50, 150]);
 
   const socialLinks = [
-    { href: "https://www.linkedin.com/company/paverasa-pvt-ltd/", label: "LinkedIn", icon: <Linkedin className="w-5 h-5" /> },
+    { href: "https://www.linkedin.com/in/paverasa-private-limited/", label: "LinkedIn", icon: <Linkedin className="w-5 h-5" /> },
     { href: "https://www.instagram.com/paverasa__pvt__ltd/", label: "Instagram", icon: <Instagram className="w-5 h-5" /> },
     { href: "https://youtube.com/@paverasa_pvt_ltd?si=83PF_duYpXbWwM3n", label: "YouTube", icon: <Youtube className="w-5 h-5" /> },
     {
@@ -43,7 +41,6 @@ export function Footer() {
 
   return (
     <div className="w-full flex flex-col font-sans">
-      {/* 3. Main Parallax Container */}
       <section
         ref={containerRef}
         style={{
@@ -51,7 +48,6 @@ export function Footer() {
         }}
         className="w-full h-screen bg-cover bg-center overflow-hidden relative"
       >
-        {/* 4. The Top-Aligned Footer Card */}
         <div className="absolute top-0 w-full z-30 pt-12 md:pt-24 lg:pt-12 px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -60,10 +56,7 @@ export function Footer() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-7xl mx-auto bg-white/95 backdrop-blur-sm shadow-xl rounded-2xl lg:rounded-3xl overflow-hidden"
           >
-            {/* Footer Content (Top Half) */}
             <div className="flex flex-col md:flex-row justify-between items-start p-8 sm:p-10 md:p-12 lg:p-16 gap-10">
-              
-              {/* Logo Area */}
               <Link href="/" className="flex items-center group">
                 <img
                   src="https://ik.imagekit.io/dypkhqxip/picsihoriz?updatedAt=1778919009480"
@@ -72,9 +65,7 @@ export function Footer() {
                 />
               </Link>
 
-              {/* Links Area */}
               <div className="flex flex-col sm:flex-row gap-10 md:gap-16 lg:gap-24 w-full md:w-auto">
-                {/* Quick Links Column */}
                 <div className="flex flex-col gap-3">
                   <h4 className="text-xs font-bold uppercase tracking-widest text-gray-900">
                     Quick Links
@@ -108,7 +99,6 @@ export function Footer() {
                   </ul>
                 </div>
 
-                {/* Legal Column */}
                 <div className="flex flex-col gap-3">
                   <h4 className="text-xs font-bold uppercase tracking-widest text-gray-900">
                     Legal
@@ -132,10 +122,8 @@ export function Footer() {
                   </ul>
                 </div>
               </div>
-
             </div>
 
-            {/* Footer Content (Bottom Bar) */}
             <div className="border-t border-gray-100 bg-white py-6 px-8 sm:px-10 md:px-12 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="flex flex-col gap-1 text-sm text-gray-500 font-medium">
                 <span>
@@ -168,11 +156,9 @@ export function Footer() {
                 ))}
               </div>
             </div>
-
           </motion.div>
         </div>
 
-        {/* 5. Background Truck Parallax Layer */}
         <motion.div
           style={{ y: truckY }}
           className="absolute inset-x-0 bottom-0 h-full pointer-events-none z-20"

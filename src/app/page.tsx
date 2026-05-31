@@ -39,10 +39,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            {/* Left Content Column */}
             <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
-              
-              {/* Headline */}
               <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-zinc-950 leading-tight">
                 Send Packages in Hyderabad <br />
                 <span className="bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 bg-clip-text text-transparent">
@@ -50,14 +47,11 @@ export default function Home() {
                 </span>
               </h1>
 
-              {/* Subheadline (Simple English) */}
               <p className="text-base sm:text-lg text-zinc-650 font-normal leading-relaxed max-w-xl">
                 Send packages safely with travelers going your way. 70% cheaper, ID-verified, and secure.
               </p>
 
-              {/* Call-to-Actions */}
               <div className="flex flex-row items-center gap-4 pt-2">
-                {/* Primary Button */}
                 <Link
                   href="#book"
                   className="inline-flex items-center justify-center px-5 py-3 rounded-xl text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
@@ -65,7 +59,6 @@ export default function Home() {
                   Book a Delivery
                 </Link>
 
-                {/* Secondary Button */}
                 <Link
                   href="#become-traveler"
                   className="inline-flex items-center justify-center px-5 py-3 rounded-xl text-sm font-medium text-zinc-700 bg-white border border-zinc-200 hover:border-zinc-300 hover:text-zinc-950 shadow-sm hover:shadow transition-all duration-200"
@@ -73,7 +66,6 @@ export default function Home() {
                   Become a Traveler
                 </Link>
               </div>
-
             </div>
 
             {/* Right Column: Lottie Animation */}
