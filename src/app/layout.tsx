@@ -80,6 +80,12 @@ export const metadata: Metadata = {
     description: "Send packages safely through everyday travelers. 70% cheaper, fully verified, and escrow-protected.",
     images: ["https://ik.imagekit.io/dypkhqxip/E-Wallet-bro.svg"],
   },
+  other: {
+    "geo.position": "17.4729;78.4870",
+    "geo.region": "IN-TG",
+    "geo.placename": "Hyderabad",
+    "ICBM": "17.4729, 78.4870",
+  },
 };
 
 export default function RootLayout({

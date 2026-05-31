@@ -1,0 +1,42 @@
+# PicsiDrop - Peer-to-Peer Same-Day Parcel Delivery
+
+PicsiDrop is a secure, pocket-friendly peer-to-peer delivery platform developed by Paverasa Private Limited. It connects shippers with everyday travelers to deliver parcels on the same day, up to 70% cheaper than traditional courier companies.
+
+## Core Value Proposition
+
+- **Same-Day Delivery**: Directly utilizes travelers heading along matching routes for instant delivery.
+- **70% Cheaper**: Peer-to-peer logistics significantly reduces overhead, offering pocket-friendly prices.
+- **KYC & Verification**: Every traveler undergoes secure Aadhaar KYC identity verification.
+- **Escrow-Protected**: Payments and parcel security are safeguarded by robust escrow terms.
+- **WhatsApp Support & Tracking**: Instant tracking and live communication via integrated WhatsApp channels.
+
+---
+
+## Operating Entity
+
+**Paverasa Private Limited**
+- **Headquarters**: 173, PLASSEY LANE, Bowenpally, Tirumalagiri, Hyderabad - 500011, Telangana, India.
+- **Primary Support Line**: +91 81254 32177
+- **Inquiry Emails**: paverasa4@gmail.com, paverasapvtltd@gmail.com
+- **LinkedIn Profile**: https://www.linkedin.com/in/paverasa-private-limited/
+
+---
+
+## Site Map & Public Pages
+
+The site is built with Next.js 16 (App Router) and Tailwind CSS. The public entry points are:
+
+- **Homepage (`/`)**: Core value proposition, hero presentation, dynamic features, FAQ accordions, and custom parallax animations.
+- **About (`/about`)**: Story of PicsiDrop, team background, green energy-friendly logistics, and same-day delivery philosophy.
+- **Contact (`/contact`)**: Support details, map coordination, headquarters listings, and dynamic SMTP-connected contact form.
+- **Privacy Policy (`/privacy`)**: Privacy statements, data encryption, KYC verification security, and cookies policy.
+- **Terms of Service (`/terms`)**: Escrow payment terms, traveler responsibilities, shipper policies, and dispute resolution guidelines.
+
+---
+
+## Architecture & API Reference
+
+- **SMTP Email Api Endpoint (`POST /api/contact`)**:
+  - Accepts JSON: `{ name: string, email: string, phone?: string, subject: string, message: string }`
+  - Relays verified requests securely to official emails (`paverasa4@gmail.com`, `paverasapvtltd@gmail.com`) using Nodemailer SMTP transporter.
+  - Safe local variable handling using `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD` and `CONTACT_RECEIVER_EMAIL`.
