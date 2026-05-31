@@ -44,15 +44,15 @@ export default function Home() {
               
               {/* Headline */}
               <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-zinc-950 leading-tight">
-                Hyderabad's Peer <br />
+                Send Packages in Hyderabad <br />
                 <span className="bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 bg-clip-text text-transparent">
-                  Delivery Network
+                  With Everyday Travelers
                 </span>
               </h1>
 
               {/* Subheadline (Simple English) */}
               <p className="text-base sm:text-lg text-zinc-650 font-normal leading-relaxed max-w-xl">
-                Send packages safely through everyday travelers. It is 70% cheaper than traditional couriers, fully verified, and escrow-protected.
+                Send packages safely with people already traveling your way. It is 70% cheaper than normal couriers, all travelers are ID-verified, and your payment is safe until delivered.
               </p>
 
               {/* Call-to-Actions */}
