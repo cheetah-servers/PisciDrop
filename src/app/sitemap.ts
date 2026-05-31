@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://picsidrop.com";
+  const baseUrl = "https://picsidrop.in";
   const changeFrequency = "weekly" as const;
   const pages = ["", "/about", "/contact", "/privacy", "/terms"];
 

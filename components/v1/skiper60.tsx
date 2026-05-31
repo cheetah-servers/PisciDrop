@@ -16,7 +16,6 @@ export interface Skiper60Props {
   className?: string;
 }
 
-// Default terms content for PicsiDrop
 const defaultTerms: TermItem[] = [
   {
     id: "definitions",
@@ -37,7 +36,7 @@ const defaultTerms: TermItem[] = [
             <tbody className="divide-y divide-zinc-200 bg-white">
               <tr>
                 <td className="px-4 py-3 font-semibold text-zinc-950">"PicsiDrop" / "Platform" / "We" / "Us"</td>
-                <td className="px-4 py-3">The PicsiDrop peer-to-peer parcel delivery service, its website (picsidrop.web.app), WhatsApp channel, and any future mobile application.</td>
+                <td className="px-4 py-3">The PicsiDrop peer-to-peer parcel delivery service, its website (picsidrop.in), WhatsApp channel, and any future mobile application.</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 font-semibold text-zinc-950">"User" / "You"</td>
@@ -514,7 +513,7 @@ const defaultTerms: TermItem[] = [
       <div className="space-y-4 text-zinc-600 text-xs sm:text-sm leading-relaxed">
         <ul className="list-disc pl-5 space-y-1.5">
           <li>These Terms and Conditions are governed by the laws of India.</li>
-          <li>Any disputes arising from these Terms shall first be attempted to be resolved through PicsiDrop's internal dispute resolution process (contact support@picsidrop.com).</li>
+          <li>Any disputes arising from these Terms shall first be attempted to be resolved through PicsiDrop's internal dispute resolution process (contact support@picsidrop.in).</li>
           <li>If not resolved within 30 days, disputes shall be subject to the exclusive jurisdiction of the Courts of Hyderabad, Telangana, India.</li>
           <li>PicsiDrop and Users agree to attempt mediation before initiating formal legal proceedings.</li>
         </ul>
@@ -530,7 +529,7 @@ const defaultTerms: TermItem[] = [
           <li>PicsiDrop reserves the right to update these Terms & Conditions and Privacy Policy at any time.</li>
           <li>Material changes will be communicated to users via WhatsApp or the registered phone number at least 14 days before taking effect.</li>
           <li>Continued use of PicsiDrop after changes take effect constitutes acceptance of the updated Terms.</li>
-          <li>The current version of these Terms is always available at picsidrop.web.app/terms</li>
+          <li>The current version of these Terms is always available at picsidrop.in/terms</li>
         </ul>
       </div>
     )
@@ -548,16 +547,15 @@ export function Skiper60({
   const mobileNavRef = useRef<HTMLDivElement>(null);
   const activeMobileTabRef = useRef<HTMLButtonElement>(null);
 
-  // Scroll spy observer to detect active section
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: "-20% 0px -60% 0px", // Trigger when section occupies the upper-middle of viewport
+      rootMargin: "-20% 0px -60% 0px",
       threshold: 0,
     };
 
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-      if (isScrollingRef.current) return; // Skip observer updates during programmatic scrolling
+      if (isScrollingRef.current) return;
 
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -576,7 +574,6 @@ export function Skiper60({
     return () => observer.disconnect();
   }, [terms]);
 
-  // Keep mobile nav scroll position centered on the active tab
   useEffect(() => {
     if (activeMobileTabRef.current && mobileNavRef.current) {
       const container = mobileNavRef.current;
@@ -602,7 +599,7 @@ export function Skiper60({
 
     const element = document.getElementById(id);
     if (element) {
-      const navbarHeight = 90; // Offset for fixed header
+      const navbarHeight = 90;
       const elementPosition = element.getBoundingClientRect().top + window.scrollY;
       const offsetPosition = elementPosition - navbarHeight;
 
@@ -612,7 +609,6 @@ export function Skiper60({
       });
     }
 
-    // Release scroll block after smooth scroll completes
     setTimeout(() => {
       isScrollingRef.current = false;
     }, 700);
@@ -620,7 +616,6 @@ export function Skiper60({
 
   return (
     <div className={`w-full ${className}`}>
-      {/* Mobile Sticky Section Selector */}
       <div
         ref={mobileNavRef}
         className="sticky top-16 z-30 bg-white/90 backdrop-blur-md border-b border-zinc-200/60 py-3 px-4 -mx-4 sm:-mx-6 flex gap-2 overflow-x-auto scrollbar-none lg:hidden"
@@ -649,7 +644,6 @@ export function Skiper60({
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-6 lg:mt-8 items-start">
-        {/* Desktop Sticky Sidebar Navigation */}
         <aside className="hidden lg:block lg:col-span-3 lg:sticky lg:top-28 lg:max-h-[calc(100vh-10rem)] overflow-y-auto pr-2 scrollbar-thin">
           <div className="space-y-1 relative">
             {terms.map((item) => {
@@ -663,7 +657,6 @@ export function Skiper60({
                       : "text-zinc-500 hover:text-zinc-950"
                     }`}
                 >
-                  {/* Sliding Background indicator */}
                   {isActive && (
                     <motion.div
                       layoutId="desktopActiveBackground"
@@ -678,7 +671,6 @@ export function Skiper60({
           </div>
         </aside>
 
-        {/* Scrollable Content Area */}
         <main className="col-span-1 lg:col-span-9 space-y-12">
           {terms.map((item) => (
             <section

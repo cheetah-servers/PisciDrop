@@ -173,15 +173,15 @@ export default function PrivacyPage() {
               <tbody className="divide-y divide-zinc-200 bg-white">
                 <tr>
                   <td className="px-4 py-3 font-semibold text-zinc-950">Legal / privacy concerns</td>
-                  <td className="px-4 py-3"><a href="mailto:privacy@picsidrop.com" className="text-orange-600 hover:underline">privacy@picsidrop.com</a></td>
+                  <td className="px-4 py-3"><a href="mailto:privacy@picsidrop.in" className="text-orange-600 hover:underline">privacy@picsidrop.in</a></td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 font-semibold text-zinc-950">Data Protection Officer</td>
-                  <td className="px-4 py-3"><a href="mailto:dpo@picsidrop.com" className="text-orange-600 hover:underline">dpo@picsidrop.com</a></td>
+                  <td className="px-4 py-3"><a href="mailto:dpo@picsidrop.in" className="text-orange-600 hover:underline">dpo@picsidrop.in</a></td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 font-semibold text-zinc-950">Grievance Officer (DPDPA)</td>
-                  <td className="px-4 py-3"><a href="mailto:grievance@picsidrop.com" className="text-orange-600 hover:underline">grievance@picsidrop.com</a></td>
+                  <td className="px-4 py-3"><a href="mailto:grievance@picsidrop.in" className="text-orange-600 hover:underline">grievance@picsidrop.in</a></td>
                 </tr>
               </tbody>
             </table>
@@ -195,7 +195,6 @@ export default function PrivacyPage() {
     <div className="min-h-screen bg-zinc-50 pt-24 flex flex-col justify-between">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 py-8 w-full flex-grow">
 
-        {/* Page Header */}
         <div className="text-left max-w-3xl mb-8">
           <span className="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold text-orange-600 bg-orange-50 border border-orange-200/40 shadow-xs mb-4 uppercase tracking-widest">
             Privacy Policy
@@ -209,7 +208,6 @@ export default function PrivacyPage() {
           </p>
         </div>
 
-        {/* Skiper60 Scroll Navigation Layout with Custom Privacy content */}
         <Skiper60
           title="Privacy Policy"
           description="Last updated: May 26, 2026"
@@ -218,7 +216,6 @@ export default function PrivacyPage() {
 
       </div>
 
-      {/* Global Footer */}
       <Footer />
     </div>
   );

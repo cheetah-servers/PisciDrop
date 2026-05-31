@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://picsidrop.com"),
+  metadataBase: new URL("https://picsidrop.in"),
   icons: {
     icon: "https://ik.imagekit.io/dypkhqxip/favicon",
     shortcut: "https://ik.imagekit.io/dypkhqxip/favicon",
@@ -56,12 +56,12 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://picsidrop.com",
+    canonical: "https://picsidrop.in",
   },
   openGraph: {
     title: "PicsiDrop | Peer-to-Peer Same-Day Delivery in Hyderabad",
     description: "Send packages safely through everyday travelers. 70% cheaper than traditional couriers, fully verified with Aadhaar KYC, and escrow-protected.",
-    url: "https://picsidrop.com",
+    url: "https://picsidrop.in",
     siteName: "PicsiDrop",
     locale: "en_IN",
     type: "website",

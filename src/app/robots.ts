@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://picsidrop.com/sitemap.xml",
+    sitemap: "https://picsidrop.in/sitemap.xml",
   };
 }
