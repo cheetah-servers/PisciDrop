@@ -52,7 +52,7 @@ export default function Home() {
 
               {/* Subheadline (Simple English) */}
               <p className="text-base sm:text-lg text-zinc-650 font-normal leading-relaxed max-w-xl">
-                Send packages safely with people already traveling your way. It is 70% cheaper than normal couriers, all travelers are ID-verified, and your payment is safe until delivered.
+                Send packages safely with travelers going your way. 70% cheaper, ID-verified, and secure.
               </p>
 
               {/* Call-to-Actions */}
