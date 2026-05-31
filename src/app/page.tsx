@@ -9,7 +9,7 @@ import { LottiePlayer } from "../../components/lottie-player";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white font-sans text-zinc-900 flex flex-col justify-between overflow-x-hidden">
+    <div className="min-h-screen bg-[#f8f9fa] font-sans text-zinc-900 flex flex-col justify-between overflow-x-hidden">
       {/* Hero Section Container */}
       <section className="relative flex items-center pt-32 pb-8 lg:pt-24 lg:pb-6 bg-white">
         {/* Subtle Background Glows */}
